@@ -1,13 +1,12 @@
 import React from 'react';
-import Text from 'react-native'
+import Search from './Components/Search'
+import FilmItem from './Components/FilmItem'
 
 export default class App extends React.Component {
-  render() {
-    return (
-        <Text>"Hello"</Text>
+    render() {
+        return (
+            <Search/>
 
-    )
-  }
+        )
+    }
 }
-
-
