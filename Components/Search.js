@@ -30,7 +30,7 @@ class Search extends React.Component {
         // console.log("RENDER")
         return (
             <View style={styles.main_container}>
-                <TextInput onChangeText={(text) => this._searchTextInputChanged(text)} style={styles.textinput} placeholder="Titre du film"/>
+                <TextInput onSubmitEditing={() => this._loadFilms()} onChangeText={(text) => this._searchTextInputChanged(text)} style={styles.textinput} placeholder="Titre du film"/>
                 <Button style={{height: 50}} title="Rechercher" onPress={() => this._loadFilms()}/>
 
                 <FlatList
