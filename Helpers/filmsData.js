@@ -20,4 +20,3 @@ export default data = [
         release_date:"1977-05-25"
     }
 ]
-
