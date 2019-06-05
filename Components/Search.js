@@ -16,8 +16,8 @@ class Search extends React.Component {
 
     _loadFilms() {
         if (this.searchedText.length > 0) {
-            getFilmsFromApiWithSearchedText(this.searchedText).then(data => this.setState({films: data.results}))
-            // getFilmsFromApiWithSearchedText("star").then(data => console.log(data))
+           getFilmsFromApiWithSearchedText(this.searchedText).then(data => this.setState({films: data.results}))
+           // getFilmsFromApiWithSearchedText("star").then(data => console.log(data))
         }
     }
 
@@ -27,7 +27,7 @@ class Search extends React.Component {
 
 
     render() {
-        // console.log("RENDER")
+       // console.log("RENDER")
         return (
             <View style={styles.main_container}>
                 <TextInput onChangeText={(text) => this._searchTextInputChanged(text)} style={styles.textinput} placeholder="Titre du film"/>
@@ -45,21 +45,21 @@ class Search extends React.Component {
     }
 }
 
-const styles = StyleSheet.create({
-    main_container: {
-        marginTop: 25,
-        flex: 1
-    },
+    const styles = StyleSheet.create({
+        main_container: {
+            marginTop: 25,
+            flex: 1
+        },
 
-    textinput: {
-        marginLeft: 5,
-        marginRight: 5,
-        height: 50,
-        borderColor: '#000000',
-        borderWidth: 1,
-        paddingLeft: 5
-    }
-})
+        textinput: {
+            marginLeft: 5,
+            marginRight: 5,
+            height: 50,
+            borderColor: '#000000',
+            borderWidth: 1,
+            paddingLeft: 5
+        }
+    })
 
 
 export default Search

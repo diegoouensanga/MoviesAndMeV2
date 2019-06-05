@@ -10,13 +10,13 @@ class FilmItem extends React.Component {
             <View style={styles.main_container} >
 
                 <Image style={styles.ImageContainer}
-                       source ={{uri: "image"}}
+                source ={{uri: "image"}}
                 />
 
                 <View style={styles.ContentContainer} >
                     <View style={styles.HeaderContainer} >
-                        <Text style={styles.Titre}>{film.title}</Text>
-                        <Text style={styles.Vote}>{film.vote_average}</Text>
+                            <Text style={styles.Titre}>{film.title}</Text>
+                            <Text style={styles.Vote}>{film.vote_average}</Text>
                     </View>
                     <View style={styles.DescriptionContainer} >
                         <Text style={styles.Description} numberOfLines={6}>{film.overview}</Text>
@@ -36,15 +36,15 @@ class FilmItem extends React.Component {
 
 const styles = StyleSheet.create({
 
-    main_container: {
+   main_container: {
         height: 200,
         flexDirection: 'row',
-        marginBottom: 20,
-        marginTop: 20
+       marginBottom: 20,
+       marginTop: 20
     },
 
     ImageContainer:{
-        height:200,
+       height:200,
         width: 120,
         margin: 5,
         flex: 1 ,
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
         textAlign: 'right'
     },
 
-    DescriptionContainer:{
+        DescriptionContainer:{
         flex: 3
     },
 
