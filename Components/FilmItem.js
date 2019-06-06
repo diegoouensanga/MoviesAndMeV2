@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, View, Text, Image } from 'react-native'
+import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native'
 import { getImageFromApi } from '../API/TMDBApi'
 
 
@@ -7,16 +7,22 @@ import { getImageFromApi } from '../API/TMDBApi'
 class FilmItem extends React.Component {
     render(){
         //console.log(this.props);
-        const film = this.props.film
+        const {film,displayDetailForFilm} = this.props
+
 
         return(
 
-            <View style={styles.main_container} >
+
+
+            <TouchableOpacity
+                onPress={() => displayDetailForFilm(film.id)}
+
+                style={styles.main_container}>
+
 
                 <Image style={styles.ImageContainer}
                        source ={{uri: getImageFromApi(film.poster_path)}}
                 />
-
                 <View style={styles.ContentContainer} >
                     <View style={styles.HeaderContainer} >
                         <Text style={styles.Titre}>{film.title}</Text>
@@ -24,16 +30,14 @@ class FilmItem extends React.Component {
                     </View>
                     <View style={styles.DescriptionContainer} >
                         <Text style={styles.Description} numberOfLines={6}>{film.overview}</Text>
-
                     </View>
                     <View style={styles.DateContainer} >
                         <Text style={styles.Date}>Sorti le {film.release_date}</Text>
-
                     </View>
-
                 </View>
 
-            </View>
+
+            </TouchableOpacity>
         )
     }
 }
