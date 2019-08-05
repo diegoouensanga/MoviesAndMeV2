@@ -15,29 +15,33 @@ class FilmDetail extends React.Component{
     }
 
     componentDidMount() {
-        getFilmDetailFromApi(this.props.navigation.state.params.idFilm).then(data =>{
+        getFilmDetailFromApi(this.props.navigation.state.params.idFilm).then(data => {
                 this.setState({
                     film: data,
                     isLoading: false
                 })
             })
     }
+
     _displayLoading() {  // affiche une petit icone de chargement si ça charge
         if (this.state.isLoading) {
             return (
                 <View style={styles.loading_container}>
-                    <ActivityIndicator size='large'/>
+                    <ActivityIndicator size='large' />
                 </View>
             )
         }
     }
+
     _displayFilm(){ // affiche le détail d'un film
-        const {film} = this.state
+        const { film } = this.state
         if (film != undefined){ /* sinon quand on lance l'appli on passe
          dans le displayFilm alors que le film n'est pas encore récup */
 
         return(
+            // Comme une vue mais si c'est trop long tu peux scroll
             <ScrollView style={styles.scrollview_container}>
+
                 <Image
                     style={styles.image}
                     source={{uri: getImageFromApi(film.backdrop_path)}}
@@ -48,11 +52,13 @@ class FilmDetail extends React.Component{
                 <Text style={styles.default_text}>Note : {film.vote_average} / 10</Text>
                 <Text style={styles.default_text}>Nombre de votes : {film.vote_count}</Text>
                 <Text style={styles.default_text}>Budget : {numeral(film.budget).format('0,0[.]00 $')}</Text>
-                <Text style={styles.default_text}>Genre(s) : {film.genres.map(function(genre){
+                <Text style={styles.default_text}>Genre(s) :
+                    {film.genres.map(function(genre){
                     return genre.name;
                 }).join(" / ")}
                 </Text>
-                <Text style={styles.default_text}>Companie(s) : {film.production_companies.map(function(company){
+                <Text style={styles.default_text}>Companie(s) :
+                    {film.production_companies.map(function(company){
                     return company.name;
                 }).join(" / ")}
                 </Text>
@@ -64,7 +70,7 @@ class FilmDetail extends React.Component{
 
 
     render(){
-        const idFilm = this.props.navigation.state.params.idFilm
+        //const idFilm = this.props.navigation.state.params.idFilm
         return(
             <View style={styles.main_container}>
                 {this._displayFilm()}

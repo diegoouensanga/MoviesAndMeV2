@@ -7,14 +7,13 @@ import { getImageFromApi } from '../API/TMDBApi'
 class FilmItem extends React.Component {
     render(){
         //console.log(this.props);
-        const {film,displayDetailForFilm} = this.props
-
+        const {film,displayDetailForFilm} = this.props // on recup le props créé dans la flatlist de search
+        //on met les données des films dans une cste
+        //on recup la fct displaydetailforfilm
 
         return(
 
-
-
-            <TouchableOpacity
+            <TouchableOpacity //On a remplacé la View par une TouchableOpacity pour détecter un clic
                 onPress={() => displayDetailForFilm(film.id)}
 
                 style={styles.main_container}>
@@ -30,6 +29,7 @@ class FilmItem extends React.Component {
                     </View>
                     <View style={styles.DescriptionContainer} >
                         <Text style={styles.Description} numberOfLines={6}>{film.overview}</Text>
+
                     </View>
                     <View style={styles.DateContainer} >
                         <Text style={styles.Date}>Sorti le {film.release_date}</Text>
