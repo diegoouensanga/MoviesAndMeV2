@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52d326f2-5f37-4536-a9cd-4e6a1c8b1d02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Components/Favorites.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Components/FilmList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Components/FilmDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/FilmDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/FilmItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/FilmItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Navigation/Navigation.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Components/Search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="116" column="46" lean-forward="true" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
+            <state relative-caret-position="2958">
+              <caret line="174" column="21" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="21" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -28,10 +30,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Components/FilmItem.js">
+        <entry file="file://$PROJECT_DIR$/Navigation/Navigation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="54" lean-forward="true" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
+            <state relative-caret-position="373">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+              <folding>
+                <element signature="e#191#200#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Components/FilmList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -39,43 +53,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Components/FilmDetail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="172" column="72" selection-start-line="172" selection-start-column="72" selection-end-line="172" selection-end-column="72" />
+            <state relative-caret-position="482">
+              <caret line="72" column="26" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="26" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Helpers/filmsData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Helpers/reducerExample.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -90,22 +75,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Store/configureStore.js">
+        <entry file="file://$PROJECT_DIR$/Components/Favorites.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            <state relative-caret-position="408">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
-                <element signature="e#17#52#0" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Navigation/Navigation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -135,6 +111,8 @@
     <findStrings>
       <find>loadFi</find>
       <find>toggle</find>
+      <find>log</find>
+      <find>dispatc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,22 +124,24 @@
         <option value="$PROJECT_DIR$/Naviguation/Naviguation.js" />
         <option value="$PROJECT_DIR$/Components/FilmDetails.js" />
         <option value="$PROJECT_DIR$/Helpers/filmsData.js" />
-        <option value="$PROJECT_DIR$/Navigation/Navigation.js" />
         <option value="$PROJECT_DIR$/API/TMDBApi.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Helpers/reducerExample.js" />
         <option value="$PROJECT_DIR$/Store/configureStore.js" />
         <option value="$PROJECT_DIR$/Store/Reducers/favoriteReducer.js" />
         <option value="$PROJECT_DIR$/App.js" />
-        <option value="$PROJECT_DIR$/Components/FilmDetail.js" />
         <option value="$PROJECT_DIR$/Components/FilmItem.js" />
+        <option value="$PROJECT_DIR$/Navigation/Navigation.js" />
         <option value="$PROJECT_DIR$/Components/Search.js" />
+        <option value="$PROJECT_DIR$/Components/Favorites.js" />
+        <option value="$PROJECT_DIR$/Components/FilmList.js" />
+        <option value="$PROJECT_DIR$/Components/FilmDetail.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="961" />
-    <option name="width" value="966" />
+    <option name="x" value="966" />
+    <option name="width" value="961" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -190,7 +170,18 @@
             <path>
               <item name="MoviesAndMeV2" type="b2602c69:ProjectViewProjectNode" />
               <item name="MoviesAndMeV2" type="462c0819:PsiDirectoryNode" />
+              <item name="Navigation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MoviesAndMeV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MoviesAndMeV2" type="462c0819:PsiDirectoryNode" />
               <item name="Store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MoviesAndMeV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MoviesAndMeV2" type="462c0819:PsiDirectoryNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+              <item name="Reducers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -203,7 +194,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565439288316" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565444392358" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -246,7 +237,7 @@
       <workItem from="1560337954313" duration="57000" />
       <workItem from="1565015010927" duration="1548000" />
       <workItem from="1565019594386" duration="7050000" />
-      <workItem from="1565431587453" duration="7692000" />
+      <workItem from="1565431587453" duration="12785000" />
     </task>
     <task id="LOCAL-00001" summary="Add files">
       <created>1559725191779</created>
@@ -283,17 +274,24 @@
       <option name="project" value="LOCAL" />
       <updated>1565438268884</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ajout symbole coeur fil de recherche si film en favoris">
+      <created>1565439382966</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565439382966</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52926000" />
+    <option name="totallyTimeSpent" value="58019000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="961" y="0" width="966" height="1047" extended-state="0" />
+    <frame x="966" y="0" width="961" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20419426" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17425083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -406,7 +404,8 @@
     <MESSAGE value="ajout de vues" />
     <MESSAGE value="Cycles de vie completed" />
     <MESSAGE value="ajout favoris" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout favoris" />
+    <MESSAGE value="ajout symbole coeur fil de recherche si film en favoris" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout symbole coeur fil de recherche si film en favoris" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/assets/icon.png">
@@ -453,31 +452,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Navigation/Navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Helpers/reducerExample.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Store/Reducers/favoriteReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
@@ -501,16 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Components/FilmDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="172" column="72" selection-start-line="172" selection-start-column="72" selection-end-line="172" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Components/FilmItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -521,10 +489,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Helpers/reducerExample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Store/Reducers/favoriteReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/FilmList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Navigation/Navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="e#191#200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Components/Search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="116" column="46" lean-forward="true" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
+        <state relative-caret-position="2958">
+          <caret line="174" column="21" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Favorites.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/FilmDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="72" column="26" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="26" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
