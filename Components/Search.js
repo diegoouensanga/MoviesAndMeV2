@@ -3,10 +3,9 @@ import {StyleSheet, View, Button, TextInput, FlatList, Text, ActivityIndicator} 
 import films from '../Helpers/filmsData'
 import FilmItem from './FilmItem'
 import { getFilmsFromApiWithSearchedText } from '../API/TMDBApi'
+import {connect} from 'react-redux'
 
 class Search extends React.Component {
-
-
 
     constructor(props) {
         super(props)
@@ -108,8 +107,17 @@ class Search extends React.Component {
 
                 <FlatList
                     data={this.state.films} //données qu'on va afficher
+                    extraData={this.props.favoritesFilm}
+                    // on utilise la prop extradata pour indiquer à la flatlist que d'autres données doivent etre
+                    //prises en compte si on lui demande de se re-rendre
                     keyExtractor={(item) => item.id.toString()}
-                    renderItem={({item}) => <FilmItem film={item} displayDetailForFilm={this._displayDetailForFilm}/>}
+                    renderItem={({item}) =>
+                        <FilmItem
+                            film={item}
+                            // Ajout d'une props isFilmFavorite pour indiquer à l'item d'afficher un 🖤 ou non
+                            isFilmFavorite={(this.props.favoritesFilm.findIndex(film =>
+                                film.id === item.id) !== -1) ? true : false}
+                            displayDetailForFilm={this._displayDetailForFilm}/>}
                     // rendu des données
                     // on créé une props film au component FilmItem
                     // on créé la prop displaydetail for film pour faire passer la fct de FilmDetail
@@ -119,6 +127,8 @@ class Search extends React.Component {
 
                         //console.log("onEndReached")
                         if (this.page < this.totalPages) {
+                            // On vérifie également qu'on n'a pas atteint la fin de
+                            // la pagination (totalPages) avant de charger plus d'éléments
                             this._loadFilms()
                         }
                     }}
@@ -156,4 +166,11 @@ const styles = StyleSheet.create({
 })
 
 
-export default Search
+// On connecte le store Redux, ainsi que les films favoris du state de notre application, à notre component Search
+const mapStateToProps = state => {
+    return {
+        favoritesFilm: state.favoritesFilm
+    }
+}
+
+export default connect(mapStateToProps)(Search)

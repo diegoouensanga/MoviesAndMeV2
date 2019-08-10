@@ -170,10 +170,10 @@ const mapStateToProps = (state) => {
         favoritesFilm: state.favoritesFilm
     }
 }
-
+//associer les données du state global aux props du component filmdetail
 export default connect(mapStateToProps)(FilmDetail)
 //export default FilmDetail
 
 
 
-//associer les données du state global aux props du component filmdetail
+

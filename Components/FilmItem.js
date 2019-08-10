@@ -5,6 +5,19 @@ import { getImageFromApi } from '../API/TMDBApi'
 
 
 class FilmItem extends React.Component {
+
+    _displayFavoriteImage() {
+        if (this.props.isFilmFavorite) {
+            // Si la props isFilmFavorite vaut true, on affiche le 🖤
+            return (
+                <Image
+                    style={styles.favorite_image}
+                    source={require('../Images/ic_favorite.png')}
+                />
+            )
+        }
+    }
+
     render(){
         //console.log(this.props);
         const {film,displayDetailForFilm} = this.props // on recup le props créé dans la flatlist de search
@@ -24,12 +37,12 @@ class FilmItem extends React.Component {
                 />
                 <View style={styles.ContentContainer} >
                     <View style={styles.HeaderContainer} >
+                        {this._displayFavoriteImage()}
                         <Text style={styles.Titre}>{film.title}</Text>
                         <Text style={styles.Vote}>{film.vote_average}</Text>
                     </View>
                     <View style={styles.DescriptionContainer} >
                         <Text style={styles.Description} numberOfLines={6}>{film.overview}</Text>
-
                     </View>
                     <View style={styles.DateContainer} >
                         <Text style={styles.Date}>Sorti le {film.release_date}</Text>
@@ -104,6 +117,11 @@ const styles = StyleSheet.create({
         textAlign: 'right'
 
     },
+    favorite_image: {
+        width: 25,
+        height: 25,
+        marginRight: 5
+    }
 })
 
 export default FilmItem
